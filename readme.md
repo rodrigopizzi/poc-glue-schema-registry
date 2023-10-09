@@ -1,6 +1,6 @@
 # Aws Glue schema registry
 This is a project for try on aws glue schema registry. 
-The main idea is create a spring web project that receive a POST of payment request and send to a kafka topic. The schema registry will validate the request and send to the topic if the request is valid. The schema registry will be used to validate the request and send to the topic if the request is valid.
+The main idea is create a spring web project that receive a POST of payment request and send to a kafka topic. The schema registry will validate the request and send to the topic if the request is valid.
 
 ## Table of contents
 * [Technologies](#technologies)
