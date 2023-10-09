@@ -1,0 +1,26 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:29092
+    producer:
+      value-serializer: com.amazonaws.services.schemaregistry.serializers.GlueSchemaRegistryKafkaSerializer
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      properties:
+        region: us-east-1
+        dataFormat: AVRO
+        registry:
+          name: registryName1
+        schemaAutoRegistrationEnabled: true
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: com.amazonaws.services.schemaregistry.deserializers.GlueSchemaRegistryKafkaDeserializer
+      properties:
+        region: us-east-1
+        avroRecordType: SPECIFIC_RECORD
+        registry:
+          name: registryName1
+      auto-offset-reset: earliest
+
+
+springdoc:
+  swagger-ui:
+    path: /docs

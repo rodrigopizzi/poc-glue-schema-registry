@@ -1,0 +1,11 @@
+{
+  "namespace": "h2r.dev.pocglue",
+  "type": "record",
+  "name": "Payment",
+  "fields": [
+    {"name": "paymentId", "type": "string"},
+    {"name": "originAccount", "type": "string"},
+    {"name": "destinationAccount", "type": "string"},
+    {"name": "amount", "type": "double"}
+  ]
+}

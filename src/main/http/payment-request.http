@@ -1,0 +1,10 @@
+### Send POST request with json body
+POST http://localhost:8080/payment
+Content-Type: application/json
+
+{
+  "paymentId": "a27275b6-edc0-42c8-9784-e2479cc1cba3",
+  "originAccount": "conta-1",
+  "destinationAccount": "conta-2",
+  "amount": 10.3
+}

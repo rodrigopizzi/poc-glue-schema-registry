@@ -1,0 +1,12 @@
+{
+  "namespace": "h2r.dev.pocglueschemaregistry.infra.message.entity",
+  "type": "record",
+  "name": "PaymentAvro",
+  "fields": [
+    {"name": "paymentId", "type": "string"},
+    {"name": "originAccount", "type": "string"},
+    {"name": "destinationAccount", "type": "string"},
+    {"name": "amount", "type": "double"},
+    {"name": "currency", "type": "string", "default": "BRL"}
+  ]
+}

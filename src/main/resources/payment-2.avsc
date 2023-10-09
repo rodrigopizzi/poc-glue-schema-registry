@@ -1,0 +1,15 @@
+{
+  "namespace": "h2r.dev.pocglueschemaregistry.infra.message.entity",
+  "type": "record",
+  "name": "PaymentAvro",
+  "fields": [
+    {"name": "paymentId", "type": "string"},
+    {"name": "originAccount", "type": "string"},
+    {"name": "destinationAccount", "type": "string"},
+    {"name": "amount", "type": "double"},
+    { "name": "datetime",
+      "type": "null", logicalType: "timestamp-millis",
+      "doc": "Date and time of the payment in ISO 8601 format"
+    }
+  ]
+}
